@@ -99,9 +99,9 @@ public class PlayerScript : MonoBehaviour
                 if (currentLevel != 0)
                 {
                     audioSource.clip = clips[currentLevel];
-                    text.text = texts[currentLevel];
                     audioSource.Play();
                 }
+                text.text = texts[currentLevel];
             }
             preLevel = currentLevel;
         }
