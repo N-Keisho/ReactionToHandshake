@@ -15,8 +15,8 @@ public class SerialHandler : MonoBehaviour
     //Linuxでは/dev/ttyUSB0
     //windowsではCOM1
     //Macでは/dev/tty.usbmodem1421など
-    public string portName = "COM1";
-    public int baudRate    = 9600;
+    public string portName;
+    public int baudRate;
 
     private SerialPort serialPort_;
     private Thread thread_;
@@ -45,6 +45,8 @@ public class SerialHandler : MonoBehaviour
 
     private void Open()
     {
+        portName = PlayerPrefs.GetString("PortName", "COM5");
+        baudRate = PlayerPrefs.GetInt("BaudRate", 9600);
         serialPort_ = new SerialPort(portName, baudRate, Parity.None, 8, StopBits.One);
          //または
          //serialPort_ = new SerialPort(portName, baudRate);

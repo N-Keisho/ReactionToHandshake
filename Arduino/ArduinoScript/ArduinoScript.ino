@@ -1,7 +1,7 @@
 #define SENSOR_PIN 0
-#define TERM 100
+#define TERM 200
 #define LOW_READ_VALUE 180
-#define HIGH_READ_VALUE 200
+#define HIGH_READ_VALUE 190
 #define LOW_OUT_VALUE 0
 #define HIGH_OUT_VALUE 10
 int index = 0;
@@ -15,6 +15,7 @@ void setup() {
 void loop() {
   if (index < TERM) {
     int read_val = analogRead(SENSOR_PIN);
+//    Serial.println(read_val);
     int out_val = map(read_val, LOW_READ_VALUE, HIGH_READ_VALUE, LOW_OUT_VALUE, HIGH_OUT_VALUE);
 
     if (out_val <= 0) {

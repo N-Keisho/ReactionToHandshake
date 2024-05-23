@@ -19,17 +19,19 @@ public class PanelScript : MonoBehaviour
         {
             Debug.Log("BaudRateInput is null");
         }
-        PortNumInput.text = serialHandler.portName;
-        BaudRateInput.text = serialHandler.baudRate.ToString();
+        PortNumInput.text = PlayerPrefs.GetString("PortName", "COM5");
+        BaudRateInput.text = PlayerPrefs.GetInt("BaudRate", 9600).ToString();
     }
 
     public void PortNameChanged()
     {
         serialHandler.portName = PortNumInput.text;
+        PlayerPrefs.SetString("PortName", PortNumInput.text);
     }
 
     public void BaudRateChanged()
     {
         serialHandler.baudRate = int.Parse(BaudRateInput.text);
+        PlayerPrefs.SetInt("BaudRate", int.Parse(BaudRateInput.text));
     }
 }
