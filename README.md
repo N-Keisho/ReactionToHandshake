@@ -8,7 +8,8 @@
 
 ![スライド1](img/1.png)
 ![スライド2](img/2.png)
-<video src="img/3.mp4" controls=true></video>
+
+https://github.com/N-Keisho/ReactionToHandshake/assets/133760530/9d92d3ab-d97c-42ac-9e9f-fd06c9afe265
 
 ![スライド4](img/4.png)
 ![スライド5](img/5.png)
