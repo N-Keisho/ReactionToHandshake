@@ -9,7 +9,8 @@
 ![スライド1](img/1.png)
 ![スライド2](img/2.png)
 
-https://github.com/N-Keisho/ReactionToHandshake/assets/133760530/9d92d3ab-d97c-42ac-9e9f-fd06c9afe265
+https://github.com/N-Keisho/ReactionToHandshake/assets/133760530/1e66dc81-92f6-4e41-9a3e-d25cb1d80ffc
+
 
 ![スライド4](img/4.png)
 ![スライド5](img/5.png)
